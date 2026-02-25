@@ -17,8 +17,8 @@ export default function Footer() {
         {/* Top row: logo + links */}
         <div className="flex flex-col lg:flex-row gap-10 md:gap-16 mb-10 md:mb-16">
           {/* Logo section */}
-          <div className="lg:w-1/3">
-            <div className="flex items-center gap-3 mb-5">
+          <div className="lg:w-1/3 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start gap-3 mb-5">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00ffd1] to-[#0077b6] flex items-center justify-center">
                 <span
                   className="text-black font-bold text-lg"
@@ -34,13 +34,13 @@ export default function Footer() {
                 TSDT
               </span>
             </div>
-            <p className="text-white/30 leading-relaxed max-w-sm text-sm">
+            <p className="text-white/30 leading-relaxed max-w-sm text-sm mx-auto lg:mx-0">
               The Tokenized Settlement Digital Token — providing enterprise
               participants with predictable digital value transfer and
               settlement.
             </p>
             {/* Socials */}
-            <div className="flex gap-3 mt-6">
+            <div className="flex gap-3 mt-6 justify-center lg:justify-start">
               {["Twitter", "Discord", "Telegram", "GitHub"].map((platform) => (
                 <button
                   key={platform}
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
 
           {/* Link columns */}
-          <div className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-8 text-center lg:text-left">
             {Object.entries(footerLinks).map(([category, links]) => (
               <div key={category}>
                 <h4
