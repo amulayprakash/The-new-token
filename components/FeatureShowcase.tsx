@@ -97,25 +97,25 @@ export default function FeatureShowcase() {
         const icon = card.querySelector(".feature-icon");
         const stats = card.querySelectorAll(".feature-stat");
 
-        // Card entrance
+        // Card entrance — faster appearance
         gsap.fromTo(
           card,
-          { y: 100, opacity: 0 },
+          { y: 60, opacity: 0 },
           {
             y: 0,
             opacity: 1,
-            duration: 1,
+            duration: 0.5,
             ease: "expo.out",
             scrollTrigger: {
               trigger: card,
-              start: "top 85%",
-              end: "top 50%",
+              start: "top 95%",
+              end: "top 70%",
               toggleActions: "play none none reverse",
             },
           }
         );
 
-        // Icon animation
+        // Icon animation — faster
         if (icon) {
           gsap.fromTo(
             icon,
@@ -123,31 +123,31 @@ export default function FeatureShowcase() {
             {
               scale: 1,
               rotation: 0,
-              duration: 0.8,
+              duration: 0.4,
               ease: "back.out(1.7)",
               scrollTrigger: {
                 trigger: card,
-                start: "top 75%",
+                start: "top 90%",
                 toggleActions: "play none none reverse",
               },
             }
           );
         }
 
-        // Stats stagger
+        // Stats stagger — faster
         if (stats.length) {
           gsap.fromTo(
             stats,
-            { x: 30, opacity: 0 },
+            { x: 20, opacity: 0 },
             {
               x: 0,
               opacity: 1,
-              stagger: 0.15,
-              duration: 0.6,
+              stagger: 0.08,
+              duration: 0.3,
               ease: "power3.out",
               scrollTrigger: {
                 trigger: card,
-                start: "top 70%",
+                start: "top 85%",
                 toggleActions: "play none none reverse",
               },
             }

@@ -40,8 +40,8 @@ export default function ParticleCanvas() {
         y: Math.random() * canvas.height,
         vx: (Math.random() - 0.5) * 0.3,
         vy: (Math.random() - 0.5) * 0.3,
-        radius: Math.random() * 1.5 + 0.5,
-        opacity: Math.random() * 0.5 + 0.1,
+        radius: Math.random() * 3 + 2,
+        opacity: Math.random() * 0.5 + 0.3,
       });
     }
     particlesRef.current = particles;
@@ -78,10 +78,14 @@ export default function ParticleCanvas() {
         p.vx *= 0.999;
         p.vy *= 0.999;
 
+        // Glow effect
+        ctx.shadowBlur = 15;
+        ctx.shadowColor = `rgba(0, 255, 209, ${p.opacity * 0.6})`;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(0, 255, 209, ${p.opacity})`;
         ctx.fill();
+        ctx.shadowBlur = 0;
       }
 
       // Draw connections
@@ -125,7 +129,7 @@ export default function ParticleCanvas() {
         height: "100vh",
         pointerEvents: "none",
         zIndex: 0,
-        opacity: 0.6,
+        opacity: 0.85,
       }}
     />
   );

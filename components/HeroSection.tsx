@@ -63,8 +63,8 @@ export default function HeroSection() {
           opacity: 0,
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "20% top",
-            end: "60% top",
+            start: "40% top",
+            end: "85% top",
             scrub: 1,
           },
         }
