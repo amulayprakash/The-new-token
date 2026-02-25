@@ -394,7 +394,7 @@ function MobileFallback() {
         </div>
 
         {/* Stats grid */}
-        <div className="grid grid-cols-2 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 gap-4 md:gap-8 px-1">
           {STATS.map((stat, i) => (
             <div
               key={i}

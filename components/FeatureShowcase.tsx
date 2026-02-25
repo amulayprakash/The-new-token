@@ -167,14 +167,14 @@ export default function FeatureShowcase() {
     >
       {/* Section header */}
       <div className="max-w-7xl mx-auto mb-12 md:mb-24">
-        <div className="flex items-center gap-3 mb-6">
+        <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
           <div className="h-px flex-1 max-w-[60px] bg-gradient-to-r from-[#00ffd1] to-transparent" />
           <span className="text-sm font-medium tracking-widest uppercase text-[#00ffd1]/70">
             Core Technology
           </span>
         </div>
         <h2
-          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-gradient"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-gradient text-center md:text-left"
           style={{ fontFamily: "var(--font-space)" }}
         >
           Built Different.
@@ -195,7 +195,7 @@ export default function FeatureShowcase() {
             />
 
             <div className="feature-inner relative z-10 p-5 sm:p-8 md:p-12 lg:p-16">
-              <div className="flex flex-col lg:flex-row lg:items-start gap-5 lg:gap-16">
+              <div className="flex flex-col lg:flex-row lg:items-start gap-5 lg:gap-16 items-center lg:items-start text-center lg:text-left">
                 {/* Left: Text content */}
                 <div className="flex-1">
                   {/* Tag */}
@@ -220,7 +220,7 @@ export default function FeatureShowcase() {
                   </p>
 
                   {/* Stats */}
-                  <div className="flex gap-6 md:gap-8 mt-5 md:mt-8">
+                  <div className="flex justify-center lg:justify-start gap-6 md:gap-8 mt-5 md:mt-8">
                     {feature.stats.map((stat, j) => (
                       <div key={j} className="feature-stat">
                         <div className="text-xl sm:text-2xl md:text-3xl font-bold text-[#00ffd1]" style={{ fontFamily: "var(--font-space)" }}>

@@ -13,7 +13,7 @@ export default function Footer() {
       {/* Top glow line */}
       <div className="absolute top-0 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-[#00ffd1]/20 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-16 lg:py-24">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 py-10 md:py-16 lg:py-24">
         {/* Top row: logo + links */}
         <div className="flex flex-col lg:flex-row gap-10 md:gap-16 mb-10 md:mb-16">
           {/* Logo section */}
@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/[0.04]">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/[0.04] text-center md:text-left">
           <p className="text-xs text-white/15">
             © 2026 TSDT Protocol. All rights reserved.
           </p>

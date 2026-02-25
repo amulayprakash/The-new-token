@@ -21,7 +21,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Scroll text highlight section */}
-      <div className="relative z-10 section-padding max-w-5xl mx-auto">
+      <div className="relative z-10 section-padding max-w-5xl mx-auto text-center md:text-left">
         <ScrollTextHighlight
           text="TSDT is not just another token. It is a settlement primitive — engineered from the ground up for institutional capital flows, zero-slippage execution, and absolute price stability across every market condition."
         />

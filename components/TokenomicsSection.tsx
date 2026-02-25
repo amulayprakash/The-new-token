@@ -247,14 +247,14 @@ export default function TokenomicsSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* ── Header ── */}
         <div ref={headerRef} className="mb-12 md:mb-20 opacity-0">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
             <div className="h-px flex-1 max-w-[60px] bg-gradient-to-r from-[#00ffd1] to-transparent" />
             <span className="text-sm font-medium tracking-widest uppercase text-[#00ffd1]/70">
               Distribution
             </span>
           </div>
           <h2
-            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-gradient"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-gradient text-center md:text-left"
             style={{ fontFamily: "var(--font-space)" }}
           >
             Tokenomics.

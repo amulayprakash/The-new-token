@@ -259,7 +259,7 @@ body {
 
 /* ─── Section styles ─── */
 .section-padding {
-  padding: 60px 16px;
+  padding: 60px 20px;
 }
 
 @media (min-width: 640px) {
