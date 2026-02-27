@@ -10,34 +10,34 @@ gsap.registerPlugin(ScrollTrigger);
 /* ── Tokenomics Data ── */
 const segments = [
   {
-    label: "Liquidity Pools",
-    pct: 35,
-    color: "#00ffd1",
-    desc: "Deep liquidity across major DEX & CEX pairs for instant settlement.",
-  },
-  {
-    label: "Treasury Reserve",
-    pct: 25,
+    label: "Treasury & Stabilization Reserve",
+    pct: 58,
     color: "#0077b6",
     desc: "Protocol-owned reserves backing stability and growth initiatives.",
   },
   {
-    label: "Ecosystem Growth",
-    pct: 20,
-    color: "#7c3aed",
-    desc: "Grants, partnerships, and developer incentives to expand the ecosystem.",
+    label: "Liquidity Provision Pools",
+    pct: 18,
+    color: "#00ffd1",
+    desc: "Deep liquidity across major DEX & CEX pairs for instant settlement.",
   },
   {
-    label: "Team & Advisors",
-    pct: 12,
+    label: "Team & Core Contributors",
+    pct: 10,
     color: "#f59e0b",
     desc: "Vested allocation for core contributors with 24-month linear unlock.",
   },
   {
-    label: "Community Rewards",
-    pct: 8,
+    label: "Ecosystem Expansion",
+    pct: 10,
+    color: "#7c3aed",
+    desc: "Grants, partnerships, and developer incentives to expand the ecosystem.",
+  },
+  {
+    label: "Advisors & Strategic Contributors",
+    pct: 4,
     color: "#ef4444",
-    desc: "Staking rewards, airdrops, and governance participation incentives.",
+    desc: "Strategic advisory support and contributor incentives.",
   },
 ];
 
