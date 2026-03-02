@@ -127,7 +127,7 @@ export default function SpiralLogo() {
         <img
           ref={logoRef}
           src="/logo.png"
-          alt="TSDT Logo"
+          alt="USBT Logo"
           className="w-full h-full object-contain filter drop-shadow-[0_0_50px_rgba(20,184,166,0.4)] brightness-110 will-change-transform pointer-events-auto"
           style={{ transform: "translate3d(0,0,0)" }}
           draggable={false}

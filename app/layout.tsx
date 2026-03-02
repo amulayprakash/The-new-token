@@ -6,14 +6,14 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space' })
 
 export const metadata: Metadata = {
-  title: 'TSDT | The Engineered Settlement Asset',
-  description: 'TSDT provides enterprise participants and corporate treasuries with predictable digital value transfer and settlement — eliminating speculative volatility.',
+  title: 'USBT | The Engineered Settlement Asset',
+  description: 'USBT provides enterprise participants and corporate treasuries with predictable digital value transfer and settlement — eliminating speculative volatility.',
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',
   },
   openGraph: {
-    title: 'TSDT | The Engineered Settlement Asset',
+    title: 'USBT | The Engineered Settlement Asset',
     description: 'Institutional-grade token for predictable digital value transfer. Multi-pool liquidity, algorithmic stability, zero-slippage settlement.',
     type: 'website',
   },
