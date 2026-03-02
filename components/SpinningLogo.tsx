@@ -40,7 +40,7 @@ export default function SpinningLogo() {
         <img 
           ref={logoRef}
           src="/logo.png" 
-          alt="Spinning TSDT Logo"
+          alt="Spinning USBT Logo"
           className="w-full h-full object-contain filter drop-shadow-[0_0_50px_rgba(20,184,166,0.4)] brightness-125 pointer-events-auto" 
         />
       </div>

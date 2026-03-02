@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-teal-500/50 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
         
         <h2 className="text-3xl md:text-5xl font-semibold mb-6 text-white tracking-tighter">
-          Integrate TSDT Today
+          Integrate USBT Today
         </h2>
         <p className="text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed text-lg lg:text-xl font-light">
           Access the API endpoints, explore the governance portal, or read the multi-party authorization protocols. Built for genuine resilience and deep liquidity.
@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-slate-500 text-sm font-light">
-          <p>&copy; 2026 TSDT Protocol. All rights reserved.</p>
+          <p>&copy; 2026 USBT Protocol. All rights reserved.</p>
           <div className="flex gap-6 mt-6 md:mt-0">
              <a href="#" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
              <a href="#" className="hover:text-slate-300 transition-colors">Terms of Service</a>

@@ -31,7 +31,7 @@ export default function Footer() {
                 className="text-white font-bold text-xl tracking-tight"
                 style={{ fontFamily: "var(--font-space)" }}
               >
-                TSDT
+                USBT 
               </span>
             </div>
             <p className="text-white/30 leading-relaxed max-w-sm text-sm mx-auto lg:mx-0">
@@ -114,7 +114,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/[0.04] text-center md:text-left">
           <p className="text-xs text-white/15">
-            © 2026 TSDT Protocol. All rights reserved.
+            © 2026 USBT Protocol. All rights reserved.
           </p>
           <p className="text-xs text-white/15">
             Built for institutional settlement.

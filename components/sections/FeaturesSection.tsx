@@ -59,7 +59,7 @@ const features = [
       </svg>
     ),
     headline: "Mint-on-Demand",
-    description: "Protocol autonomously mints TSDT as institutional demand scales.",
+    description: "Protocol autonomously mints USBT as institutional demand scales.",
     expandedContent:
       "As liquidity enters the Primary Peg pool, the elastic supply mechanism automatically issues new tokens, maintaining the peg while meeting demand.",
     accentColor: "emerald",
@@ -74,7 +74,7 @@ const features = [
     headline: "Burn Mechanism",
     description: "Supply contraction dissolves tokens seamlessly from circulation.",
     expandedContent:
-      "During contraction events, tokens are algorithmically removed from active supply, ensuring circulating TSDT always matches verifiable on-chain collateral.",
+      "During contraction events, tokens are algorithmically removed from active supply, ensuring circulating USBT always matches verifiable on-chain collateral.",
     accentColor: "amber",
   },
 ];

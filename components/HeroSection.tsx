@@ -128,7 +128,7 @@ export default function HeroSection() {
             {/* Logo Image */}
             <Image
               src="/logo.png"
-              alt="TSDT Logo"
+              alt="USBT  Logo"
               width={320}
               height={320}
               priority

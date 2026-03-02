@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="h-screen w-full flex flex-col items-center justify-center pointer-events-none relative z-10">
       <div className="text-center pointer-events-auto mt-20 relative">
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-slate-400 mb-8 drop-shadow-2xl">
-          TSDT: The Engineered <br/> Settlement Asset
+          USBT: The Engineered <br/> Settlement Asset
         </h1>
         <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-light tracking-wide backdrop-blur-xl bg-slate-950/40 p-6 rounded-2xl border border-slate-800/80 shadow-2xl">
           For enterprise participants, corporate treasury managers, liquidity providers, and fintech institutions requiring predictable digital value transfer and settlement without speculative volatility.

@@ -12,7 +12,7 @@ export default function StabilityFramework() {
             Stability Framework
           </h3>
           <p className="mt-6 text-slate-400 text-lg font-light leading-relaxed">
-            Algorithmic supply elasticity ensures that the total circulating TSDT identically matches verifiable on-chain collateral at all times.
+            Algorithmic supply elasticity ensures that the total circulating USBT identically matches verifiable on-chain collateral at all times.
           </p>
         </div>
         
@@ -23,7 +23,7 @@ export default function StabilityFramework() {
             <div className="relative z-10 p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
               <h4 className="text-2xl md:text-3xl font-semibold mb-3 text-white tracking-tight">Mint-on-Demand</h4>
               <p className="text-slate-400 text-base leading-relaxed font-light">
-                As institutional demand scales and liquidity enters the Primary Peg pool, the protocol autonomously mints new TSDT.
+                As institutional demand scales and liquidity enters the Primary Peg pool, the protocol autonomously mints new USBT.
               </p>
             </div>
             

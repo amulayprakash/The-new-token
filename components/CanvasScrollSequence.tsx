@@ -205,7 +205,7 @@ export default function CanvasScrollSequence() {
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light tracking-wide leading-relaxed">
-          The Tokenized Settlement Digital Token (TSDT) provides enterprise
+          The Tokenized Settlement Digital Token (USBT) provides enterprise
           participants and corporate treasuries with predictable digital value
           transfer—eliminating speculative volatility.
         </p>
