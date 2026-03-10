@@ -17,7 +17,7 @@ export default function Footer() {
         </p>
         
         <div className="flex flex-wrap justify-center gap-6 mb-16">
-          <a href="#" className="px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 font-medium text-sm">Whitepaper</a>
+          <a href="/USBT-Whitepaper.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 font-medium text-sm">Whitepaper</a>
           <a href="#" className="px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 font-medium text-sm">Governance Portal</a>
           <a href="#" className="px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 font-medium text-sm">System Dashboards</a>
           <a href="#" className="px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 font-medium text-sm">API References</a>

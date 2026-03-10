@@ -98,7 +98,9 @@ export default function Footer() {
                   {links.map((link) => (
                     <li key={link}>
                       <a
-                        href="#"
+                        href={link === "Whitepaper" ? "/USBT-Whitepaper.pdf" : "#"}
+                        target={link === "Whitepaper" ? "_blank" : undefined}
+                        rel={link === "Whitepaper" ? "noopener noreferrer" : undefined}
                         className="text-sm text-white/25 hover:text-white/60 transition-colors duration-300"
                       >
                         {link}

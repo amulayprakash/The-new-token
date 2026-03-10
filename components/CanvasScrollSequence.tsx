@@ -211,9 +211,9 @@ export default function CanvasScrollSequence() {
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center pointer-events-auto">
-          <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-black hover:bg-slate-200 transition-all duration-300 font-semibold text-base shadow-[0_0_20px_rgba(255,255,255,0.1)] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+          <a href="#stats" className="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-black hover:bg-slate-200 transition-all duration-300 font-semibold text-base shadow-[0_0_20px_rgba(255,255,255,0.1)] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black text-center">
             Explore Ecosystem
-          </button>
+          </a>
           <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-black/40 backdrop-blur-md hover:bg-white/10 border border-white/10 transition-all duration-300 text-white font-medium text-base cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
             Read Documentation
           </button>

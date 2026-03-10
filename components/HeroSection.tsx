@@ -171,13 +171,13 @@ export default function HeroSection() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center w-full sm:w-auto">
-            <button className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl bg-white text-black font-semibold text-sm md:text-base transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:scale-[1.02] cursor-pointer">
+            <a href="#stats" className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl bg-white text-black font-semibold text-sm md:text-base transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:scale-[1.02] cursor-pointer text-center">
               Explore Ecosystem
               <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </button>
-            <button className="w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl glass hover:bg-white/10 transition-all duration-500 text-white font-medium text-sm md:text-base glow-border cursor-pointer hover:scale-[1.02]">
+            </a>
+            <a href="/USBT-Whitepaper.pdf" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl glass hover:bg-white/10 transition-all duration-500 text-white font-medium text-sm md:text-base glow-border cursor-pointer hover:scale-[1.02] text-center">
               Read Whitepaper
-            </button>
+            </a>
           </div>
         </div>
       </div>
