@@ -31,6 +31,8 @@ function DesktopSequence() {
   const labelRefs = useRef<(HTMLDivElement | null)[]>([]);
   const headingRef = useRef<HTMLDivElement>(null);
   const [loaded, setLoaded] = useState(false);
+  const [loadProgress, setLoadProgress] = useState(0);
+  const [canvasDisplaySize, setCanvasDisplaySize] = useState(400);
   const lastFrameRef = useRef(-1);
 
   /* preload all frames */
@@ -43,6 +45,7 @@ function DesktopSequence() {
       img.decoding = "async";
       const done = () => {
         count++;
+        setLoadProgress(Math.round((count / FRAME_COUNT) * 100));
         if (count === FRAME_COUNT) setLoaded(true);
       };
       img.onload = done;
@@ -98,9 +101,10 @@ function DesktopSequence() {
   useEffect(() => {
     const resize = () => {
       const c = canvasRef.current;
+      const displaySize = Math.min(window.innerWidth * 0.65, window.innerHeight * 0.85);
+      setCanvasDisplaySize(displaySize);
       if (!c) return;
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      const displaySize = Math.min(window.innerWidth * 0.65, window.innerHeight * 0.85);
       const internalSize = Math.min(displaySize * dpr, MAX_CANVAS_RES);
       c.width = internalSize;
       c.height = internalSize;
@@ -244,6 +248,78 @@ function DesktopSequence() {
         <div className="absolute inset-0 pointer-events-none z-0">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#00ffd1]/[0.03] blur-[120px]" />
         </div>
+
+        {/* Loading placeholder — shown while frames are fetching */}
+        {!loaded && (
+          <div
+            className="absolute z-[1] flex items-center justify-center"
+            style={{
+              top: "50%",
+              left: "calc(420px + (100% - 420px - 450px) / 2)",
+              transform: "translate(-50%, -50%)",
+              width: `${canvasDisplaySize}px`,
+              height: `${canvasDisplaySize}px`,
+            }}
+          >
+            {/* Outer pulsing ring */}
+            <div className="absolute inset-0 rounded-full border border-[#00ffd1]/10 animate-pulse" />
+
+            {/* Spinning progress arc using conic-gradient */}
+            <div
+              className="absolute inset-4 rounded-full"
+              style={{
+                background: `conic-gradient(#00ffd1 ${loadProgress * 3.6}deg, transparent ${loadProgress * 3.6}deg)`,
+                opacity: 0.25,
+                transition: "background 0.3s ease",
+              }}
+            />
+            <div className="absolute inset-5 rounded-full bg-black" />
+
+            {/* Inner spinning ring */}
+            <div
+              className="absolute inset-8 rounded-full border border-[#00ffd1]/20"
+              style={{ animation: "spin 3s linear infinite" }}
+            />
+            <div
+              className="absolute inset-8 rounded-full border-t border-[#00ffd1]/60 rounded-full"
+              style={{ animation: "spin 1.5s linear infinite" }}
+            />
+
+            {/* Center content */}
+            <div className="relative flex flex-col items-center gap-3">
+              {/* Logo mark */}
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#00ffd1]/20 to-[#0077b6]/20 border border-[#00ffd1]/20 flex items-center justify-center">
+                <span
+                  className="text-[#00ffd1] font-bold text-2xl"
+                  style={{ fontFamily: "var(--font-space)" }}
+                >
+                  T
+                </span>
+              </div>
+
+              {/* Progress */}
+              <div className="flex flex-col items-center gap-1">
+                <span className="text-[#00ffd1] font-bold text-lg tabular-nums" style={{ fontFamily: "var(--font-space)" }}>
+                  {loadProgress}%
+                </span>
+                <span className="text-white/25 text-[10px] tracking-widest uppercase">
+                  Loading
+                </span>
+              </div>
+
+              {/* Progress bar */}
+              <div className="w-24 h-[1px] bg-white/10 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-gradient-to-r from-[#00ffd1]/60 to-[#00ffd1] rounded-full transition-all duration-300"
+                  style={{ width: `${loadProgress}%` }}
+                />
+              </div>
+            </div>
+
+            {/* Ambient glow */}
+            <div className="absolute inset-0 rounded-full bg-[#00ffd1]/[0.03] blur-2xl animate-pulse" />
+          </div>
+        )}
 
         {/* Canvas — full brightness so animation is clearly visible */}
         <canvas
