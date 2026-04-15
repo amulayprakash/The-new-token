@@ -89,9 +89,14 @@ export default function Navbar() {
 
           {/* Right side: CTA + mobile hamburger */}
           <div className="flex items-center gap-3">
-            <button className="px-4 py-2 md:px-5 md:py-2.5 rounded-xl bg-[#00ffd1] text-black font-semibold text-sm hover:bg-[#00e6bc] transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,209,0.3)] cursor-pointer">
-              Buy USBT 
-            </button>
+            <a
+              href="https://exchange.usbt.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 md:px-5 md:py-2.5 rounded-xl bg-[#00ffd1] text-black font-semibold text-sm hover:bg-[#00e6bc] transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,209,0.3)] cursor-pointer"
+            >
+              Buy USBT
+            </a>
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
