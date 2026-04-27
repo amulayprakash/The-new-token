@@ -168,14 +168,15 @@ export default function HeroSection() {
             participants and corporate treasuries with predictable digital value
             transfer — eliminating speculative volatility.
           </p>
+        </div>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center w-full sm:w-auto">
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center w-full sm:w-auto">
             <a href="#stats" className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl bg-white text-black font-semibold text-sm md:text-base transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:scale-[1.02] cursor-pointer text-center">
               Explore Ecosystem
               <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
-            <a href="/USBT%20-%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl border border-[#00ffd1]/60 bg-[#00ffd1]/10 hover:bg-[#00ffd1]/20 transition-all duration-500 text-[#00ffd1] font-semibold text-sm md:text-base cursor-pointer hover:scale-[1.02] text-center shadow-[0_0_20px_rgba(0,255,209,0.15)] hover:shadow-[0_0_40px_rgba(0,255,209,0.35)]">
+            <a href="/USBT%20-%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl border-2 border-[#00ffd1] bg-[#00ffd1] hover:bg-[#00ffe5] transition-all duration-300 text-black font-bold text-sm md:text-base cursor-pointer hover:scale-[1.03] text-center shadow-[0_0_40px_rgba(0,255,209,0.7),0_0_80px_rgba(0,255,209,0.3)] hover:shadow-[0_0_60px_rgba(0,255,209,1),0_0_120px_rgba(0,255,209,0.5)]">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -184,7 +185,6 @@ export default function HeroSection() {
               </span>
             </a>
           </div>
-        </div>
       </div>
 
       {/* Bottom fade */}

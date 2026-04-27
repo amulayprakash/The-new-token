@@ -10,13 +10,11 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const [visible, setVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setVisible(window.scrollY > window.innerHeight * 0.5);
       if (mobileOpen && window.scrollY > 100) setMobileOpen(false);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -51,13 +49,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-        visible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 -translate-y-full pointer-events-none"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50">
       <div className="mx-auto max-w-7xl px-4 md:px-6 py-3 md:py-4">
         <div className="flex items-center justify-between glass-strong rounded-2xl px-4 md:px-6 py-3">
           {/* Logo */}
@@ -85,6 +77,14 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            <a
+              href="/USBT%20-%20Whitepaper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 text-white/60 hover:text-white hover:bg-white/5"
+            >
+              Whitepaper
+            </a>
           </div>
 
           {/* Right side: CTA + mobile hamburger */}
@@ -111,7 +111,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile dropdown */}
-        <div className={`md:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? 'max-h-64 mt-2' : 'max-h-0'}`}>
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? 'max-h-80 mt-2' : 'max-h-0'}`}>
           <div className="glass-strong rounded-2xl p-3 space-y-1">
             {navLinks.map((link) => (
               <button
@@ -126,6 +126,14 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            <a
+              href="/USBT%20-%20Whitepaper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 text-white/60"
+            >
+              Whitepaper
+            </a>
           </div>
         </div>
       </div>
