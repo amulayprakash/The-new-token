@@ -55,7 +55,7 @@ const icons: Record<string, JSX.Element> = {
 /* ── Footer link data ───────────────────────────────────────────────────── */
 const footerLinks: Record<string, { label: string; href: string; external: boolean }[]> = {
   Protocol: [
-    { label: "Whitepaper", href: "/USBT-Whitepaper.pdf", external: true },
+    { label: "Whitepaper", href: "/whitepaper", external: true },
   ],
   Community: [
     { label: "Twitter",   href: "https://x.com/USBTNetwork",                               external: true },

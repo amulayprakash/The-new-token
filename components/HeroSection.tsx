@@ -116,7 +116,7 @@ export default function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-2 sm:px-6 max-w-5xl w-full">
+      <div className="relative z-30 flex flex-col items-center text-center px-2 sm:px-6 max-w-5xl w-full pt-20 md:pt-24">
         {/* 3D Coin */}
         <div
           ref={coinRef}
@@ -172,11 +172,11 @@ export default function HeroSection() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center w-full sm:w-auto">
-            <a href="#stats" className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl bg-white text-black font-semibold text-sm md:text-base transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:scale-[1.02] cursor-pointer text-center">
+            <a href="#stats" className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl bg-[#00ffd1] text-black font-bold text-sm md:text-base transition-all duration-300 cursor-pointer text-center shadow-[0_0_24px_rgba(0,255,209,0.45)] hover:bg-[#00ffe5] hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(0,255,209,0.65)]">
               Explore Ecosystem
               <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
-            <a href="/USBT%20-%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl border-2 border-[#00ffd1] bg-[#00ffd1] hover:bg-[#00ffe5] transition-all duration-300 text-black font-bold text-sm md:text-base cursor-pointer hover:scale-[1.03] text-center shadow-[0_0_40px_rgba(0,255,209,0.7),0_0_80px_rgba(0,255,209,0.3)] hover:shadow-[0_0_60px_rgba(0,255,209,1),0_0_120px_rgba(0,255,209,0.5)]">
+            <a href="/whitepaper" target="_blank" rel="noopener noreferrer" className="group w-full sm:w-auto px-6 py-3.5 md:px-8 md:py-4 rounded-2xl border border-white/50 bg-white/15 backdrop-blur-sm hover:bg-white/25 hover:border-white/70 transition-all duration-300 text-white font-semibold text-sm md:text-base cursor-pointer hover:scale-[1.02] text-center">
               <span className="inline-flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

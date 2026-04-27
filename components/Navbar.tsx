@@ -78,9 +78,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="/USBT%20-%20Whitepaper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/whitepaper"
               className="px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 text-white/60 hover:text-white hover:bg-white/5"
             >
               Whitepaper
@@ -127,9 +125,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="/USBT%20-%20Whitepaper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/whitepaper"
               className="block w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 text-white/60"
             >
               Whitepaper
