@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Features", href: "#features" },
   { label: "Tokenomics", href: "#tokenomics" },
   { label: "Stats", href: "#stats" },
+  { label: "Team", href: "#team" },
 ];
 
 export default function Navbar() {
@@ -31,7 +32,7 @@ export default function Navbar() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.2, rootMargin: "-10% 0px -60% 0px" }
     );
 
     sections.forEach((id) => {
@@ -45,6 +46,7 @@ export default function Navbar() {
   const handleClick = (href: string) => {
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
+    setActiveSection(href.replace("#", ""));
     setMobileOpen(false);
   };
 

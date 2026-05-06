@@ -5,6 +5,7 @@ import ScrollTextHighlight from "@/components/ScrollTextHighlight";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import StatsScrollSequence from "@/components/StatsScrollSequence";
 import TokenomicsSection from "@/components/TokenomicsSection";
+import TeamSection from "@/components/TeamSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/FooterNew";
 
@@ -35,6 +36,9 @@ export default function Home() {
 
       {/* Tokenomics */}
       <TokenomicsSection />
+
+      {/* Team */}
+      <TeamSection />
 
       {/* CTA */}
       <CTASection />
