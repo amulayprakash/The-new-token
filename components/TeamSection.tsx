@@ -96,7 +96,7 @@ function SocialIcon({ type }: { type: "linkedin" | "twitter" | "facebook" }) {
   return <FacebookIcon />;
 }
 
-function TeamCard({ member, index }: { member: TeamMember; index: number }) {
+function TeamCard({ member }: { member: TeamMember }) {
   const [expanded, setExpanded] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -344,8 +344,8 @@ export default function TeamSection() {
 
         {/* Team cards */}
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-          {TEAM.map((member, i) => (
-            <TeamCard key={member.name} member={member} index={i} />
+          {TEAM.map((member) => (
+            <TeamCard key={member.name} member={member} />
           ))}
         </div>
       </div>
