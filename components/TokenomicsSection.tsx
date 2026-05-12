@@ -10,34 +10,34 @@ gsap.registerPlugin(ScrollTrigger);
 /* ── Tokenomics Data ── */
 const segments = [
   {
-    label: "Treasury & Stabilization Reserve",
+    label: "Treasury Reserve",
     pct: 58,
     color: "#0077b6",
-    desc: "Protocol-owned reserves backing stability and growth initiatives.",
+    desc: "Released dynamically based on market conditions and stabilization requirements. No cliff or vesting — flexible deployment.",
   },
   {
-    label: "Liquidity Provision Pools",
+    label: "Public Liquidity",
     pct: 18,
     color: "#00ffd1",
-    desc: "Deep liquidity across major DEX & CEX pairs for instant settlement.",
+    desc: "100% available at TGE via liquidity pool for immediate trading. No cliff or vesting period.",
   },
   {
-    label: "Team & Core Contributors",
+    label: "Team & Development",
     pct: 10,
     color: "#f59e0b",
-    desc: "Vested allocation for core contributors with 24-month linear unlock.",
+    desc: "0% at TGE. 12-month cliff followed by 48-month linear vesting.",
   },
   {
-    label: "Ecosystem Expansion",
+    label: "Ecosystem Growth",
     pct: 10,
     color: "#7c3aed",
-    desc: "Grants, partnerships, and developer incentives to expand the ecosystem.",
+    desc: "10% at TGE. 3-month cliff, then 36-month gradual release aligned with partnerships and utility integration.",
   },
   {
     label: "Advisors & Strategic Contributors",
     pct: 4,
     color: "#ef4444",
-    desc: "Strategic advisory support and contributor incentives.",
+    desc: "0% at TGE. 6-month cliff followed by 36-month linear vesting.",
   },
 ];
 
