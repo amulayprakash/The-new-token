@@ -39,7 +39,7 @@ export default function SpinningLogo() {
         <div className="absolute inset-0 bg-teal-500/10 blur-[80px] rounded-full" />
         <img 
           ref={logoRef}
-          src="/logo.png" 
+          src="/logo-new.png" 
           alt="Spinning USBT Logo"
           className="w-full h-full object-contain filter drop-shadow-[0_0_50px_rgba(20,184,166,0.4)] brightness-125 pointer-events-auto" 
         />

@@ -56,9 +56,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between glass-strong rounded-2xl px-4 md:px-6 py-3">
           {/* Logo */}
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00ffd1] to-[#0077b6] flex items-center justify-center flex-shrink-0">
-              <span className="text-black font-bold text-sm" style={{ fontFamily: 'var(--font-space)' }}>T</span>
-            </div>
+            <img 
+              src="/logo-new.png" 
+              alt="USBT Logo" 
+              className="w-9 h-9 object-contain flex-shrink-0" 
+            />
             <span className="text-white font-semibold text-lg tracking-tight" style={{ fontFamily: 'var(--font-space)' }}>
               USBT 
             </span>

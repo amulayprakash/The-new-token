@@ -127,7 +127,7 @@ export default function HeroSection() {
                style={{ transformStyle: "preserve-3d" }}>
             {/* Logo Image */}
             <Image
-              src="/logo.png"
+              src="/logo-new.png"
               alt="USBT  Logo"
               width={320}
               height={320}

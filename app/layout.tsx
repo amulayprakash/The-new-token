@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title: 'USBT | The Engineered Settlement Asset',
   description: 'USBT provides enterprise participants and corporate treasuries with predictable digital value transfer and settlement — eliminating speculative volatility.',
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: '/logo-new.png',
+    apple: '/logo-new.png',
   },
   openGraph: {
     title: 'USBT | The Engineered Settlement Asset',
