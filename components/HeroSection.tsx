@@ -154,12 +154,10 @@ export default function HeroSection() {
 
           {/* Heading */}
           <h1
-            className="text-[2.5rem] sm:text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold tracking-tighter leading-[0.9] mb-5 md:mb-8"
+            className="text-[2.5rem] sm:text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold tracking-tighter leading-[0.9] mb-5 md:mb-8 text-[#00ffd1]"
             style={{ fontFamily: "var(--font-space)" }}
           >
-            <span className="text-gradient">Engineered for</span>
-            <br />
-            <span className="text-gradient-accent">Absolute Stability</span>
+            Universally Scalable Blockchain Token
           </h1>
 
           {/* Subtext */}
